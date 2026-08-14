@@ -33,7 +33,7 @@
     </div>
 
     <a
-  href="https://wa.me/919277409566R"
+  href="https://wa.me/919277409566"
   target="_blank"
   class="nav-button"
   >
@@ -50,7 +50,7 @@
     <div class="hero-content">
 
       <p class="hero-small">
-        ✦ WEB DESIGNER & FRONTEND DEVELOPER
+        ✦ WEB DESIGNER & DEVELOPERS.
       </p>
 
       <h1>
@@ -72,6 +72,49 @@
         <a href="#contact" class="secondary-button">
           Let's Work Together
         </a>
+        <!-- REQUEST WEBSITE -->
+
+<section class="request section" id="request">
+
+  <p class="section-label">
+    05 — GET STARTED
+  </p>
+
+  <h2>
+    REQUEST YOUR
+    <span>WEBSITE.</span>
+  </h2>
+
+  <p class="request-subtext">
+    Tell me about your business and I'll get back to you
+    with a plan and pricing.
+  </p>
+
+  <form id="requestForm" class="request-form">
+
+    <select id="category" required>
+      <option value="" disabled selected>Select Business Category</option>
+      <option value="Gym/Fitness">Gym/Fitness</option>
+      <option value="Salon/Beauty">Salon/Beauty</option>
+      <option value="Restaurant/Cafe">Restaurant/Cafe</option>
+      <option value="Shop/Retail">Shop/Retail</option>
+      <option value="Coaching/Institute">Coaching/Institute</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <input type="text" id="bizName" placeholder="Business/Owner Name" required>
+
+    <input type="tel" id="reqPhone" placeholder="Phone Number" required>
+
+    <textarea id="reqDetails" placeholder="What kind of website do you need?" required></textarea>
+
+    <button type="submit" class="primary-button">
+      Send Request <span>↗</span>
+    </button>
+
+  </form>
+
+</section>
 
       </div>
 
@@ -429,6 +472,30 @@
 
 
   <script src="script.js"></script>
+<!-- ============================================== -->
+<!-- 🤖 HARSH BAJPAI AI PORTFOLIO CHATBOT WIDGET -->
+<!-- ============================================== -->
+<div id="ai-chat-bubble" onclick="toggleAIChat()" style="position: fixed; bottom: 25px; right: 25px; width: 60px; height: 60px; background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 8px 24px rgba(37,99,235,0.4); z-index: 9999; transition: transform 0.3s ease;">
+  <span style="font-size: 28px;">💬</span>
+</div>
 
+<div id="ai-chat-container" style="display: none; position: fixed; bottom: 95px; right: 25px; width: 380px; height: 560px; max-width: calc(100vw - 40px); max-height: calc(100vh - 120px); border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.25); z-index: 9999; border: 1px solid rgba(255,255,255,0.15); background: #ffffff;">
+  <iframe src="https://shopify-support-bot.onrender.com" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+
+<script>
+  function toggleAIChat() {
+    const chatContainer = document.getElementById('ai-chat-container');
+    const bubble = document.getElementById('ai-chat-bubble');
+    if (chatContainer.style.display === 'none' || chatContainer.style.display === '') {
+      chatContainer.style.display = 'block';
+      bubble.style.transform = 'scale(0.9) rotate(90deg)';
+    } else {
+      chatContainer.style.display = 'none';
+      bubble.style.transform = 'scale(1) rotate(0deg)';
+    }
+  }
+</script>
+<!-- ============================================== -->
 </body>
 </html>

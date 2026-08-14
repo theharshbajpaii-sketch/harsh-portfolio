@@ -61,4 +61,19 @@ sections.forEach((section) => {
 
   observer.observe(section);
 
+});const requestForm = document.getElementById("requestForm");
+
+requestForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const category = document.getElementById("category").value;
+  const bizName = document.getElementById("bizName").value;
+  const phone = document.getElementById("reqPhone").value;
+  const details = document.getElementById("reqDetails").value;
+
+  const message = `Hi Harsh, I want a website.%0A%0ACategory: ${category}%0ABusiness/Name: ${bizName}%0APhone: ${phone}%0ADetails: ${details}`;
+
+  const whatsappURL = `https://wa.me/919277409566?text=${message}`;
+
+  window.open(whatsappURL, "_blank");
 });

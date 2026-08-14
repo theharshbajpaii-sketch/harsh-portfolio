@@ -563,3 +563,39 @@ footer > a:last-child {
   }
 
 }
+.request-subtext {
+  max-width: 500px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.request-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.request-form select,
+.request-form input,
+.request-form textarea {
+  width: 100%;
+  padding: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: inherit;
+  border-radius: 4px;
+}
+
+.request-form textarea {
+  height: 110px;
+  resize: none;
+}
+
+.request-form button {
+  align-self: center;
+  margin-top: 10px;
+}
